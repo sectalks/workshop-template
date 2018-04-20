@@ -4,6 +4,13 @@ Firstname Lastname <author@asciidoctor.org>
 :toc:
 :icons: font
 :quick-uri: https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
 
 Content entered directly below the header but before the first section heading is called the preamble.
 
@@ -27,16 +34,6 @@ This is another paragraph.footnote:[I am footnote text and will be displayed at 
 
 This is a paragraph.
 
-.Example block title
-====
-Content in an example block is subject to normal substitutions.
-====
-
-.Sidebar title
-****
-Sidebars contain aside text and are subject to normal substitutions.
-****
-
 ==== Third level heading
 
 [#id-for-listing-block]
@@ -46,11 +43,13 @@ Content in a listing block is subject to verbatim substitutions.
 Listing block content is commonly used to preserve code input.
 ----
 
+Source code from an external file
 [source,c]
 ----
 include::inc/code/helloworld.c
 ----
 
+Source code inline
 [source,ruby]
 ----
 require 'sinatra'
