@@ -46,7 +46,7 @@ Listing block content is commonly used to preserve code input.
 Source code from an external file
 [source,c]
 ----
-include::inc/code/helloworld.c
+include::inc/code/helloworld.c[]
 ----
 
 Source code inline
