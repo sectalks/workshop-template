@@ -1,0 +1,23 @@
+# Sample Vagrant for SecTalks Workshop
+# By default vagrant mount the current directory to /vagrant on the VM
+Vagrant.configure(2) do |config|
+  config.vm.box = "ubuntu/trusty64"
+  config.vm.hostname = "sectalks-lab"  # choose a unique hostname, e.g. sectalks-exploit_dev
+  # An host-only network to setup the bridge
+  # config.vm.network "private_network", ip: "10.65.3.254"
+
+  config.vm.provider "virtualbox" do |vb|
+    vb.memory = 1024
+    vb.cpus = 2
+    vb.name = "sectalks-lab"  # hostname here again
+    # Change the network adapter type and promiscuous mode
+    # vb.customize ['modifyvm', :id, '--nictype2', 'Am79C973']
+    # vb.customize ['modifyvm', :id, '--nicpromisc2', 'allow-all']
+  end
+
+  # Install build-essential
+  config.vm.provision "shell", inline: <<-SHELL
+    apt-get update
+    apt-get -y install build-essential
+  SHELL
+end

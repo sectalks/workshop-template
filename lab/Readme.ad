@@ -1,0 +1,12 @@
+= Lab
+
+. Step 1: Download and install Vagrant
+. Step 2: `vagrant up`
+. Step 3: `vagrant ssh` & Done!
+
+= Troubleshooting
+
+== Error 
+Do this to fix it
+
+

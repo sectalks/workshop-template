@@ -1,0 +1,40 @@
+# SecTalks Workshop Template
+
+Every workshop has it's own repository under sectalks/. 
+Look into each directory for a sample content.
+Once your workshop is complete, contact guru@sectalks.org for your workshop to be added.
+
+
+## Lesson
+
+* Create a directory for one or more than one related topics.
+* The content of each lesson should be no longer one hour to deliver.
+* Strive for teaching through labs.
+* Aim for at least five lessons for the workshop.
+* Provide references at the end of each lessons.
+
+## Lab
+
+* Provide clear, step by step guide to setup the lab. 
+* Aim to use open-source and vendor agnostic tools.
+* Use 'Vagrant' or similar devops tools to build the lab. It is easier to maintain.
+* Where possible, give out source code and instruction to build. It is easier to maintain. 
+
+# Readme.md
+
+Replace content of this file with the following information:
+
+```
+# Workshop title
+Workshop description and objectives
+
+# Syllabus
+
+# Author(s)
+Name, contact, bio
+
+# Prerequisites
+
+# License
+Creative Commons: Attribution, Share-Alike http://creativecommons.org/licenses/by-sa/3.0/)
+```
